@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="character" content="width=device-width, initial-scale1.0" />
+    <title>Character</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    
+  </head>
+  <body background="asset/sky.jpg" onload="startTime()">
+    <div>
+    <form id="judul">
+        <h1>Mid Exam</h1>
+        <p align="Center">
+            <img width="15%" height="15%" src="asset/crown.png"></img>
+        </p>
+    </div>
+
+    <div class="container">
+      <div class="swiper">
+        
+        <div class="swiper-wrapper">
+        
+          <div class="swiper-slide">
+              <p align=" Center">
+                <img src="asset/char1.png" /></div>  
+              </p>
+          <div class="swiper-slide">
+              <p align="Center">
+                <img src="asset/char2.png" /></div>
+              </p>
+          <div class="swiper-slide">
+              <p align="Center">
+                <img src="asset/char3.png" /></div>
+              </p>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="Name">
+        <p align="Center">
+    <form action="/action_page.php">
+        <label for="fname">Name : </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <a href="index.html">
+          <button class="button button-5" type="button">Play</button>
+        </a>
+      </form>
+      </p>
+    </div>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+    </script>
+  </body>
+</html>
